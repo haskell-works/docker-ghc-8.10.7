@@ -1,1 +1,1 @@
-# docker-ghc-8.8.2
+# docker-ghc-8.10.7
