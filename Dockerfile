@@ -46,5 +46,5 @@ ENV LANG=C.UTF-8 \
     PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/bin:$PATH
 
 RUN apt-get update                                                          && \
-    apt-get -y install cabal-install-3.2                                    && \
+    apt-get -y install cabal-install-3.4                                    && \
     rm -rf /var/lib/apt/lists/*
