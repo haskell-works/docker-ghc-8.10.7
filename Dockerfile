@@ -17,7 +17,7 @@ RUN apt-get update                                                          && \
 
 RUN apt-get update                                                          && \
     apt-get -y install libsnappy1v5 libtinfo-dev libsnappy-dev jq           && \
-    apt-get -y install zlib1g zlib1g-dev                                    && \
+    apt-get -y install zlib1g zlib1g-dev libgmp3-dev                        && \
     rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update                                                          && \
