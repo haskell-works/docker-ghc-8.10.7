@@ -8,13 +8,6 @@ ARG PID1_VERSION=0.1.0.1
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update                                                          && \
-    apt-get -y install software-properties-common                           && \
-    add-apt-repository ppa:hvr/ghc                                          && \
-    apt-get -y remove --purge software-properties-common                    && \
-    apt-get -y autoremove                                                   && \
-    echo Done
-
-RUN apt-get update                                                          && \
     apt-get -y install curl git locales make sudo wget xz-utils zip         && \
     rm -rf /var/lib/apt/lists/*
 
